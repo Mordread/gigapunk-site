@@ -4,13 +4,23 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GigaPunk</title>
-  <meta name="description" content="GigaPunk is an open-source local-first AI development cockpit for coding agents, memory, automation, and self-hosted workflows." />
+  <meta name="description" content="GigaPunk is an experimental local-first AI development cockpit for coding agents, memory, automation, research, and self-hosted workflows." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://gigapunk.net/" />
+  <meta property="og:title" content="GigaPunk" />
+  <meta property="og:description" content="An experimental local-first AI development cockpit for coding agents, memory, automation, research, and self-hosted workflows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gigapunk.net/" />
   <style>
     :root {
       color-scheme: dark;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #08090d;
       color: #f4f4f5;
+    }
+
+    * {
+      box-sizing: border-box;
     }
 
     body {
@@ -26,7 +36,7 @@
     }
 
     main {
-      max-width: 780px;
+      width: min(100%, 860px);
     }
 
     .eyebrow {
@@ -38,8 +48,8 @@
     }
 
     h1 {
-      font-size: clamp(3.5rem, 10vw, 7rem);
-      line-height: 0.9;
+      font-size: clamp(3.5rem, 12vw, 8rem);
+      line-height: 0.88;
       margin: 0 0 1.25rem;
     }
 
@@ -48,10 +58,19 @@
       line-height: 1.6;
       color: #d4d4d8;
       margin: 0 0 1.5rem;
+      max-width: 760px;
+    }
+
+    .status-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
     }
 
     .status {
       display: inline-flex;
+      align-items: center;
       border: 1px solid rgba(255,255,255,0.18);
       border-radius: 999px;
       padding: 0.65rem 1rem;
@@ -59,16 +78,33 @@
       background: rgba(255,255,255,0.06);
       backdrop-filter: blur(12px);
     }
+
+    .note {
+      margin-top: 2rem;
+      font-size: 0.98rem;
+      color: #a1a1aa;
+    }
   </style>
 </head>
 <body>
   <main>
+    <div class="eyebrow">Local-first AI systems</div>
     <h1>GigaPunk</h1>
     <p>
-      GigaPunk is an experimental open-source development cockpit for AI-assisted coding,
+      GigaPunk is an experimental development cockpit for AI-assisted coding,
       agent memory, automation, research, and self-hosted workflows.
     </p>
-    <div class="status">Coming soon</div>
+    <p>
+      Public project materials, documentation, demos, and contact channels are being prepared.
+    </p>
+    <div class="status-row">
+      <div class="status">Coming soon</div>
+      <div class="status">Early build in progress</div>
+      <div class="status">Domain email planned</div>
+    </div>
+    <p class="note">
+      This site is intentionally minimal while the project foundation is assembled.
+    </p>
   </main>
 </body>
 </html>
